@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+             AIzaSyA2ZEF7sFqij6RStilJFXTd8tKUMQ_8lVQ
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA2ZEF7sFqij6RStilJFXTd8tKUMQ_8lVQ" />
+
+        <activity
+            android:name=".map"
+            android:exported="false"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name=".private_message"
+            android:exported="false" />
+        <activity
+            android:name=".add_friend"
+            android:exported="false" />
+        <activity
+            android:name=".friends_list"
+            android:exported="false" />
+        <activity
+            android:name=".adminfeatures.delete_food"
+            android:exported="false" />
+        <activity
+            android:name=".adminfeatures.add_food"
+            android:exported="false" />
+        <activity
+            android:name=".game_chat"
+            android:exported="false" />
+        <activity
+            android:name=".schedule_delete"
+            android:exported="false" />
+        <activity
+            android:name=".schedule_add"
+            android:exported="false" />
+        <activity
+            android:name=".schedule_edit"
+            android:exported="false" />
+        <activity
+            android:name=".schedule"
+            android:exported="false" />
+        <activity
+            android:name=".roster_update_inputs"
+            android:exported="false" />
+        <activity
+            android:name=".roster_update"
+            android:exported="false" />
+        <activity
+            android:name=".roster_delete"
+            android:exported="false" />
+        <activity
+            android:name=".roster_add"
+            android:exported="false" />
+        <activity
+            android:name=".edit_roster"
+            android:exported="false" />
+        <activity
+            android:name=".roster"
+            android:exported="false" />
+        <activity
+            android:name=".adminfeatures.vendor_change"
+            android:exported="false" />
+        <activity
+            android:name=".concessions_info"
+            android:exported="false" />
+        <activity
+            android:name=".adminfeatures.vendor_register"
+            android:exported="false" />
+        <activity
+            android:name=".adminfeatures.vendor_info"
+            android:exported="false" />
+        <activity
+            android:name=".adminfeatures.grant_admin"
+            android:exported="false" />
+        <activity
+            android:name=".admin_page"
+            android:exported="false"
+            android:label="@string/title_activity_admin_page" />
+        <activity
+            android:name=".concessions"
+            android:exported="false"
+            android:label="@string/title_activity_concessions"
+            android:theme="@style/Theme.App.NoActionBar" />
+        <activity
+            android:name=".activity_menu"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".AccountDetails"
+            android:exported="false" />
+        <activity
+            android:name=".pass_change"
+            android:exported="false" />
+    </application>
+
+</manifest>
